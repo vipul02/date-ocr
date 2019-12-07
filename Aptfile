@@ -3,3 +3,7 @@ libxrender1
 libfontconfig1
 libice6
 libxext6
+libxrender-dev
+apt-get update
+apt-get install -y libsm6 libxext6 libxrender-dev libglib2.0-0
+pip install opencv-python
