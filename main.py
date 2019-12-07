@@ -9,7 +9,7 @@ from base64 import b64decode
 
 app = Flask(__name__)
 
-@app.route('/', methods=['GET'])
+@app.route('/', methods=['GET', 'POST'])
 def home():
 	return 'Goto: https://date-ocr.herokuapp.com/extract_date'
 
