@@ -5,3 +5,4 @@ libice6
 libxext6
 libxrender-dev
 tesseract
+tesseract-ocr
