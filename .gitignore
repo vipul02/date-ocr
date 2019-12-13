@@ -1,3 +1,4 @@
 .env/
 __pycache__/
 .ipynb_checkpoints/
+archived_old_version_true_for_heroku_tessearct_not_working/
