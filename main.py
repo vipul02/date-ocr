@@ -1,11 +1,4 @@
 from flask import Flask, render_template, request
-import os
-from model import ExtractDate, ProcessImage
-import numpy as np
-import re
-from PIL import Image
-from io import BytesIO
-from base64 import b64decode
 import requests
 
 app = Flask(__name__)
@@ -23,3 +16,6 @@ def date():
 		return requests.post(url, json={"base_64_image_content" : base64_img}).json()
 	else:
 		return 'Please POST base64 image data'
+
+if __name__ == '__main__':
+	app.run(host='0.0.0.0', port=8080)
